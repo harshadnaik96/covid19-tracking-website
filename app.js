@@ -3,9 +3,27 @@ function getData() {
     .then((res) => res.json())
     .then((data) => {
       let tableValue = document.getElementById("table-value");
+      let tbValue = document.getElementById("tbvalue");
+
+      //Global cell
+      let Row = tbValue.insertRow();
+
+      // cell 1
+      Row.insertCell(0);
+      tbValue.rows[1].cells[0].innerHTML = data.Global.TotalConfirmed;
+
+      // cell 2
+      Row.insertCell(1);
+      tbValue.rows[1].cells[1].innerHTML = data.Global.TotalDeaths;
+
+      // cell 3
+
+      Row.insertCell(2);
+      tbValue.rows[1].cells[2].innerHTML = data.Global.TotalRecovered;
+
+      // Countries cell
       for (var i = 1; i < data["Countries"].length; i++) {
         let row = tableValue.insertRow();
-
         // cell 1
         row.insertCell(0);
         tableValue.rows[i].cells[0].innerHTML =

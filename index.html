@@ -17,26 +17,38 @@
     <div class="image">
       <img src="covid.jpg" alt="Covid19" width="200" height="200" />
     </div>
-    <section class="corona-updates container-fluid">
+
+    <section class="container-fluid">
       <!-- Title -->
       <div class="text-center text-uppercase title">
         <h1>Covid-19 Stats around the globe</h1>
       </div>
+      <!-- Total world numbers  -->
+
+      <div class="table-sm">
+        <table class="table text-center tbl" id="tbvalue">
+          <tr>
+            <th>Total Cases</th>
+            <th>Total Deaths</th>
+            <th>Total Recovered</th>
+          </tr>
+        </table>
+      </div>
 
       <!-- Table elements -->
-      <div class="table-responsive">
+      <div class="table-sm">
         <table
           class="table table-bordered table-striped text-center"
           id="table-value"
         >
           <tr>
-            <th>Country</th>
-            <th>TotalConfirmed</th>
-            <th>TotalRecovered</th>
-            <th>TotalDeaths</th>
-            <th>NewConfirmed</th>
-            <th>NewRecovered</th>
-            <th>NewDeaths</th>
+            <th class="th">Country</th>
+            <th class="th">TotalConfirmed</th>
+            <th class="th">TotalRecovered</th>
+            <th class="th">TotalDeaths</th>
+            <th class="th">NewConfirmed</th>
+            <th class="th">NewRecovered</th>
+            <th class="th">NewDeaths</th>
           </tr>
         </table>
       </div>
